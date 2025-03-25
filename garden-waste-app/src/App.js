@@ -3,6 +3,9 @@ import { getImageURL } from "./utils/image-util";
 
 function App() {
   const wastes = getWastes();
+  
+  function handleClick(){
+  }
     return (
       <ul className="wastes">
       {
@@ -17,7 +20,7 @@ function App() {
             <h2 className="info-group > img">{waste.size}</h2>
             <p>{waste.hire_period_days}</p>
             <h3 className="info-group > p">{waste.price_before_vat}</h3>
-            
+            <button className="button">{handleClick} Skip this Select</button>
            </li> 
         ))
       }
