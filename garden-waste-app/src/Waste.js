@@ -1,3 +1,4 @@
+import img from "./Assets"
 
 function Waste({id}) {
     return (
